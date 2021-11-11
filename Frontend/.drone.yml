@@ -1,0 +1,28 @@
+clone:
+  git:
+    image: alpine/git
+    commands:
+      - git init
+      - echo $USERNAME
+      - git remote add origin http://$USERNAME:$PASSWORD@106.14.244.24:3000/BOBO/Frontend.git
+      - git pull origin master
+    secrets: [ username, password ]
+
+pipeline:
+  build:
+    image: node
+    commands:
+      - npm install --force
+      - npm run build
+  deploy:
+    image: docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+      - cp Dockerfile.dist ./dist/Dockerfile
+      - cd ./dist
+      - docker build --rm -t bobo/frontend .
+      - docker run --rm -v /srv/bobo/:/target alpine rm -r /target/frontend || true
+      - docker run --rm -v /srv/bobo/:/target bobo/frontend mv /dist /target/frontend
+      - docker run --rm -v /srv/bobo/:/target alpine rm /target/frontend/Dockerfile || true
+      - docker image rm -f bobo/frontend .

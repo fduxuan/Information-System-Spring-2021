@@ -1,0 +1,29 @@
+clone:
+  git:
+    image: alpine/git
+    commands:
+      - git init
+      - echo $USERNAME
+      - git remote add origin http://$USERNAME:$PASSWORD@106.14.244.24:3000/BOBO/Document.git
+      - git pull origin master
+    secrets: [ username, password ]
+
+
+pipeline:
+  build:
+    image: squidfunk/mkdocs-material
+    commands:
+      - mkdocs build
+
+  deploy:
+    image: docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+      - cp Dockerfile.site ./site/Dockerfile
+      - cd ./site
+      - docker build --rm -t bobo/document .
+      - docker run --rm -v /srv/bobo/:/target alpine rm -r /target/document || true
+      - docker run --rm -v /srv/bobo/:/target bobo/document mv /site /target/document
+      - docker run --rm -v /srv/bobo/:/target alpine rm /target/document/Dockerfile || true
+      - docker image rm -f bobo/document .

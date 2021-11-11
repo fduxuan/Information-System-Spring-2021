@@ -1,0 +1,14 @@
+code{
+    background: #007fbf1a;
+    color: #577085;
+    border: #d5e4da .02em solid;
+    font-weight: bold;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+    border-radius: 4px;
+    font-family: SFMono-Regular,Consolas,Menlo,monospace;
+}
+
+span{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+
+ }
