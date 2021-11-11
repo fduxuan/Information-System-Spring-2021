@@ -13,9 +13,9 @@
 
 * `登录前不可访问任何业务页面`
 
-   	![](https://minio.droproblem.com/document/page/home-logout.png)
-
-   	![](https://minio.droproblem.com/document/page/home-login.png)
+   	![](assets/page/home-logout.png)
+   	
+   	![](assets/page/home-login.png)
 
 
 
@@ -29,7 +29,7 @@
 
   非管理员通过路径访问报错：
 
-  ![](https://minio.droproblem.com/document/page/not-admin.png)
+  ![](assets/page/not-admin.png)
 
   ​	  	
 
@@ -41,23 +41,25 @@
 
   
 
-    ![](https://minio.droproblem.com/document/page/admin-user.png)
+    ![](assets/page/admin-user.png)
 
   
 
-    ![](https://minio.droproblem.com/document/page/admin-useredit.png)
+
+    ![](assets/page/admin-useredit.png)
 
   
+
 
 
 
 * ### 部门管理页面
 
    	和用户管理相同，管理员可进行`部门创建` `修改部门基本信息` `增加部门成员` `部门搜索筛选`等等
+   	
+   	![](assets/page/admin-department.png)
 
-   	![](https://minio.droproblem.com/document/page/admin-department.png)
-
-    ![](https://minio.droproblem.com/document/page/admin-department-info.png)
+    ![](assets/page/admin-department-info.png)
 
 
 
@@ -69,15 +71,15 @@
 
     `仅能查看自己参与的项目` `项目的搜索与筛选`
 
-    ![](https://minio.droproblem.com/document/page/project-list.png)
+    ![](assets/page/project-list.png)
 
 * ### 项目详情页面
 
     `WBS任务树` `看板` `任务信息`
 
-    ![](https://minio.droproblem.com/document/page/project-detail.png)
+    ![](assets/page/project-detail.png)
 
-    ![](https://minio.droproblem.com/document/page/kanban.png)
+    ![](assets/page/kanban.png)
 
 
 
@@ -85,9 +87,9 @@
 
     `总任务统计` `进度统计`  `参与部门占比`  `截止日期` `甘特图`
 
-    ![](https://minio.droproblem.com/document/page/graph.png)
+    ![](assets/page/graph.png)
 
-    ![](https://minio.droproblem.com/document/page/gantt.png)
+    ![](assets/page/gantt.png)
 
    
 
@@ -101,7 +103,7 @@
 
     `编辑任务` `添加子任务` `添加执行记录` `上传下载附件` `完成任务` `邀请执行人`
 
-     ![](https://minio.droproblem.com/document/page/task.png)
+     ![](assets/page/task.png)
 
 
 
@@ -111,7 +113,7 @@
 
 `系统通知 ` `邀请参与` `请求审批`
 
-![](https://minio.droproblem.com/document/page/notification.png)
+![](assets/page/notification.png)
 
 
 
@@ -121,9 +123,9 @@
 
 `上传头像` `部门用户关系`
 
-![](https://minio.droproblem.com/document/page/profile.png)
+![](assets/page/profile.png)
 
-![](https://minio.droproblem.com/document/page/avatar.png)
+![](assets/page/avatar.png)
 
 
 
@@ -133,4 +135,4 @@
 
 非任务负责人（或父任务负责人）修改任务信息提示权限错误
 
-![](https://minio.droproblem.com/document/page/permission-denied.png)
+![](assets/page/permission-denied.png)

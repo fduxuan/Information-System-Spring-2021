@@ -1,6 +1,6 @@
 # 基本简介
 
-![](https://minio.droproblem.com/document/logo.png)
+![](assets/logo.png)
 
 
 

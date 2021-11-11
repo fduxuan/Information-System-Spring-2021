@@ -8,7 +8,7 @@
 
 实体之间的关系如下图所示
 
-![](https://minio.droproblem.com/document/entity.png)
+![](assets/entity.png)
 
 ---
 
@@ -54,7 +54,7 @@
 
 功能导图如下：(不清楚可右键在新标签页打开放大查看)
 
-![](https://minio.droproblem.com/document/functions.png)
+![](assets/functions.png)
 
 
 
@@ -64,4 +64,4 @@
 
 功能流程如下：
 
-![](https://minio.droproblem.com/document/process.png)
+![](assets/process.png)
