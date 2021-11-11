@@ -6,5 +6,3 @@
 
 
 
-[course-website](https://fduxuan.github.io/IntroDB-Spring-2021/)
-
